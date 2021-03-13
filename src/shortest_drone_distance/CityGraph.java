@@ -27,8 +27,8 @@ public class CityGraph {
     }
 
     public void createGraph() {
-        for (int i = 0; i < 800; i++) {
-            for (int n = 0; n < 800; n++) {
+        for (int i = 0; i < NumCities.numCities; i++) {
+            for (int n = 0; n < NumCities.numCities; n++) {
                 dis = list[i].getDistance(list[n]);
                 if (dis < DIS_MAX && dis != 0) {
                     list[i].getList().add(new Edge(list[n], dis));
@@ -44,7 +44,7 @@ public class CityGraph {
         int source = 0;
         int alt;
 
-        for (int i = 0; i < 800; i++) {
+        for (int i = 0; i < NumCities.numCities; i++) {
             list[i].setPathDisMax();
             list[i].setPrev(null);
             if (first.toString().equals(list[i].toString())) {

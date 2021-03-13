@@ -50,7 +50,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void loadCity(ActionEvent event) {
-        City adjList[] = new City[800];
+        City adjList[] = new City[NumCities.numCities];
         int index = 0;
         int zip;
         int timeZone;
@@ -104,7 +104,7 @@ public class FXMLDocumentController implements Initializable {
         startCombo.getItems().clear();
         destCombo.getItems().clear();
 
-        for (int i = 0; i < 800; i++) {
+        for (int i = 0; i < NumCities.numCities; i++) {
             startCombo.getItems().add(adjList[i]);
             destCombo.getItems().add(adjList[i]);
         }
@@ -174,7 +174,7 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        textField.setText("CityData5.csv");
+        textField.setText("CityData3.csv");
     }
 
 }
