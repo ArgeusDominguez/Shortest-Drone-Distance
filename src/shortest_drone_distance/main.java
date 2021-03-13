@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package shortest.drone.distance;
+package shortest_drone_distance;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
